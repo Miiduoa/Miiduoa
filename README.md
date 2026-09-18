@@ -25,6 +25,7 @@
 | **鐵道營運簡報 DSS** | 合成 KPI／預警／what-if 簡報（學習向，非得獎宣稱） | [`rail-ops-briefing-dss`](https://github.com/Miiduoa/rail-ops-briefing-dss) |
 | **作品集網站** | GitHub Pages 總覽 | [`Miiduoa.github.io`](https://miiduoa.github.io) |
 | **零售營運 DSS** | 合成日銷量預測＋特徵重要性＋補貨／人力規則建議（Streamlit） | [`retail-ops-dss`](https://github.com/Miiduoa/retail-ops-dss) |
+| **Campus One（graduation）** | 靜宜學號登入為主的校園助手練習專案（Expo＋Next.js＋Firebase monorepo；課外作品，非競賽得獎） | [`graduation`](https://github.com/Miiduoa/graduation) |
 | **RailFlow-DSS** | 臺鐵數據力 2026 海選企劃（旅運負荷預測決策支援構想） | [`competition-lab/tra_data2026`](https://github.com/Miiduoa/competition-lab) |
 | **Kaggle S6E9** | Predicting EV Purchases；Public **0.94540**（帳號 kuchinwei） | [`competition-lab/kaggle_s6e9`](https://github.com/Miiduoa/competition-lab) |
 | **Kaggriculture** | Kaggle agent；公開分 **600.0**（Complete） | [`competition-lab/kaggriculture`](https://github.com/Miiduoa/competition-lab) |
