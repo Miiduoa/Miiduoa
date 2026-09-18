@@ -21,14 +21,17 @@
 
 | 作品 | 說明 | 連結 |
 |------|------|------|
-| **零售營運 DSS** | 合成日銷量預測＋特徵重要性＋補貨／人力規則建議（Streamlit） | [`retail-ops-dss`](https://github.com/USERNAME/retail-ops-dss) |
-| **RailFlow-DSS** | 臺鐵數據力 2026 海選企劃（旅運負荷預測決策支援構想） | [`competition-lab/tra_data2026`](https://github.com/USERNAME/competition-lab) |
-| **Kaggle S6E9** | Predicting EV Purchases；Public **0.94540**（帳號 kuchinwei） | [`competition-lab/kaggle_s6e9`](https://github.com/USERNAME/competition-lab) |
-| **Kaggriculture** | Kaggle agent；公開分 **600.0**（Complete） | [`competition-lab/kaggriculture`](https://github.com/USERNAME/competition-lab) |
-| **DrivenData Parkinson** | DaT scan；正式提交公開分 **0.5591**（log loss↓越好） | [`competition-lab/drivendata_parkinsons`](https://github.com/USERNAME/competition-lab) |
-| **AI CUP 2026 秋季** | 圍棋 Task1／Task2；**已報名、建模中**（本地驗證，非官方榜） | [`competition-lab/aicup_2026`](https://github.com/USERNAME/competition-lab) |
+| **需求感知補貨 Lite** | 多 SKU 預測＋(s,S) 補貨模擬（新建作品） | [`demand-sensing-lite`](https://github.com/Miiduoa/demand-sensing-lite) |
+| **鐵道營運簡報 DSS** | 合成 KPI／預警／what-if 簡報（學習向，非得獎宣稱） | [`rail-ops-briefing-dss`](https://github.com/Miiduoa/rail-ops-briefing-dss) |
+| **作品集網站** | GitHub Pages 總覽 | [`Miiduoa.github.io`](https://miiduoa.github.io) |
+| **零售營運 DSS** | 合成日銷量預測＋特徵重要性＋補貨／人力規則建議（Streamlit） | [`retail-ops-dss`](https://github.com/Miiduoa/retail-ops-dss) |
+| **RailFlow-DSS** | 臺鐵數據力 2026 海選企劃（旅運負荷預測決策支援構想） | [`competition-lab/tra_data2026`](https://github.com/Miiduoa/competition-lab) |
+| **Kaggle S6E9** | Predicting EV Purchases；Public **0.94540**（帳號 kuchinwei） | [`competition-lab/kaggle_s6e9`](https://github.com/Miiduoa/competition-lab) |
+| **Kaggriculture** | Kaggle agent；公開分 **600.0**（Complete） | [`competition-lab/kaggriculture`](https://github.com/Miiduoa/competition-lab) |
+| **DrivenData Parkinson** | DaT scan；正式提交公開分 **0.5591**（log loss↓越好） | [`competition-lab/drivendata_parkinsons`](https://github.com/Miiduoa/competition-lab) |
+| **AI CUP 2026 秋季** | 圍棋 Task1／Task2；**已報名、建模中**（本地驗證，非官方榜） | [`competition-lab/aicup_2026`](https://github.com/Miiduoa/competition-lab) |
 
-> 將上方 `USERNAME` 換成實際 GitHub 帳號後即可使用。
+> 將上方 `Miiduoa` 換成實際 GitHub 帳號後即可使用。
 
 ## Stack
 
