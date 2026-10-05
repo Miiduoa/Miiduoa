@@ -25,7 +25,7 @@
 ### Systems & analytics labs
 
 - **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、sample ratio mismatch、funnel 與 event contract；先確認資料與分流可信，再解讀 lift。
-- **[bitest · BI regression checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，可直接放進 CI。
+- **[Byline · CSV Contract Checker](https://github.com/Miiduoa/byline)** — 將欄位、推斷型別、null rate、unique count 與 SHA-256 存成 manifest；資料更新時區分 breaking / warning，CLI exit code 可直接擋 CI。
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套可測試回測流程。
 - **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — 用 append-only inventory events 重建庫存，檢查重複事件、負庫存與資料一致性。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯獨立測試。
