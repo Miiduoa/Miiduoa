@@ -21,16 +21,17 @@
 | **[Nolu](https://github.com/Miiduoa/web)** | 登入、主要 region 或網路出問題時，學生資料與身份邊界仍要保持正確 | PWA + Supabase；hot standby、durable outbox、Ed25519 replication、guest privacy、provider mesh，以及大量 auth / failover / resilience contract tests |
 | **[Byline](https://github.com/Miiduoa/byline)** | 上游 CSV 改欄位或型別時，分析流程常到最後才壞 | Python CLI 建立可 review 的 dataset contract；檢查欄位、型別、null rate、row count 與 SHA-256，breaking change 可直接擋 CI |
 | **[Aortal](https://github.com/Miiduoa/aortal)** | API payload 的小改動可能直接破壞既有 consumer | Node.js 零 runtime dependency；從 JSON sample 推導 contract，遞迴檢查 required field、型別、nullable 與新增欄位，內建測試與 CI |
+| **[anyone](https://github.com/Miiduoa/anyone)** | 匿名回饋服務要同時處理重複送出、審核與隱私邊界 | Express 後端；Idempotency-Key、防濫刷 rate limit、pending moderation、append-only audit trail、管理員 session 邊界與 Node built-in tests |
 
 ### Systems & analytics labs
 
 - **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、sample ratio mismatch、funnel 與 event contract；先確認資料與分流可信，再解讀 lift。
-- **[Byline · CSV Contract Checker](https://github.com/Miiduoa/byline)** — 將欄位、推斷型別、null rate、unique count 與 SHA-256 存成 manifest；資料更新時區分 breaking / warning，CLI exit code 可直接擋 CI。
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套可測試回測流程。
 - **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — 用 append-only inventory events 重建庫存，檢查重複事件、負庫存與資料一致性。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯獨立測試。
 - **[line-bot · Reliable Webhook Service](https://github.com/Miiduoa/line-bot)** — LINE HMAC 簽章驗證、event idempotency、per-source rate limit、command routing 與 Reply API 邊界分離。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — 用 Python AST 與 rubric 檢查函式、參數、迴圈、條件、禁止 API 等結構要求；明確區分 structural feedback 與語意正確性。
+- **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 靜態閱讀器；加權全文搜尋、Service Worker、localStorage 閱讀進度，以及 CI 內容完整性檢查，不為了作品集硬塞 framework。
 - **[air · IoT Sensor Network Monitor](https://github.com/Miiduoa/air)** — 檢查感測站座標、資料新鮮度、異常值與重複上報，並以 Haversine 找最近可用站點。
 - **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — SQLite schema、foreign key、index、window function、分析查詢與完整性測試；合成資料可重建。
 - **[math · Double-entry Personal Finance Ledger](https://github.com/Miiduoa/math)** — 以 integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益維持帳務一致性。
