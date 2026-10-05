@@ -18,6 +18,7 @@
 | **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具多停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語介面、自訂字型與 macOS / Windows 桌面封裝 |
 | **[competition-lab](https://github.com/Miiduoa/competition-lab)** | 競賽容易只留下分數，沒有可重現的思考過程 | 整理 Kaggle、DrivenData、AI CUP 與鐵道資料企劃的程式、驗證紀錄與提交結果，明確區分本地驗證與官方成績 |
 | **[Tired](https://github.com/Miiduoa/tired)** | 多重身份下的任務、課程與時間容易互相衝突 | SwiftUI + Firebase iOS App；另抽出純 Swift PlanningCore，測試 priority、deadline、busy block、locked task 與 daily capacity |
+| **[Nolu](https://github.com/Miiduoa/web)** | 登入、主要 region 或網路出問題時，學生資料與身份邊界仍要保持正確 | PWA + Supabase；hot standby、durable outbox、Ed25519 replication、guest privacy、provider mesh，以及大量 auth / failover / resilience contract tests |
 | **[Byline](https://github.com/Miiduoa/byline)** | 上游 CSV 改欄位或型別時，分析流程常到最後才壞 | Python CLI 建立可 review 的 dataset contract；檢查欄位、型別、null rate、row count 與 SHA-256，breaking change 可直接擋 CI |
 | **[Aortal](https://github.com/Miiduoa/aortal)** | API payload 的小改動可能直接破壞既有 consumer | Node.js 零 runtime dependency；從 JSON sample 推導 contract，遞迴檢查 required field、型別、nullable 與新增欄位，內建測試與 CI |
 
