@@ -33,6 +33,7 @@
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯獨立測試。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — 用 Python AST 與 rubric 檢查函式、參數、迴圈、條件、禁止 API 等結構要求；明確區分 structural feedback 與語意正確性。
 - **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 靜態閱讀器；加權全文搜尋、Service Worker、localStorage 閱讀進度，以及 CI 內容完整性檢查，不為了作品集硬塞 framework。
+- **[n8n / Render SLO Guard](https://github.com/Miiduoa/n8n-render-deploy)** — Synthetic HTTP probes + append-only history；計算 availability、error budget、burn rate、p95 latency 與雙時間窗 alert severity，不把 deployment success 當成 reliability。
 - **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — SQLite schema、foreign key、index、window function、分析查詢與完整性測試；合成資料可重建。
 - **[math · Double-entry Personal Finance Ledger](https://github.com/Miiduoa/math)** — 以 integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益維持帳務一致性。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training / JSONL data contract / infer-eval config / W&B-TensorBoard tracking；CI 驗證 YAML、DeepSpeed JSON 與資料契約，不宣稱未提供的 benchmark。
