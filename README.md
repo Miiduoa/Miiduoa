@@ -22,6 +22,7 @@
 
 - **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、sample ratio mismatch、funnel 與 event contract；先確認資料與分流可信，再解讀 lift。
 - **[bitest · BI regression checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，可直接放進 CI。
+- **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套可測試回測流程。
 - **[PUClass](https://github.com/Miiduoa/puclass)** — 課程時段衝突、每週負荷與作業壓力檢查；核心邏輯以 Node.js 寫成可測試函式。
 - **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 需求預測接到 `(s,S)` 補貨模擬，觀察預測誤差如何影響服務水準與庫存。
 - **[Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)** — 用營運 KPI、What-if 槓桿與規則建議做鐵道營運簡報原型。
@@ -37,7 +38,7 @@
 比起只交 notebook，我更常把結果接成 Web、Mobile、Dashboard、CLI 或桌面工具。
 
 **留下可檢查的證據。**  
-README、測試、執行方式、資料來源與已知限制都放在 repo 裡，讓別人能快速判斷作品做到哪裡。
+README、測試、執行方式、資料來源與已知限制都放在 repo 裡，讓別人能快速判斷作品做到哪裡。較早期的課堂練習保留作為學習紀錄，不列入精選作品。
 
 ---
 
