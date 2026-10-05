@@ -17,6 +17,8 @@
 | **[Campus One](https://github.com/Miiduoa/graduation)** | 校園資訊分散，學生要在多個系統間找下一步 | Expo + Next.js + Firebase；把課程、訊息、地圖、交通、學習風險與行動建議整合成跨端原型 |
 | **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具多停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語介面、自訂字型與 macOS / Windows 桌面封裝 |
 | **[competition-lab](https://github.com/Miiduoa/competition-lab)** | 競賽容易只留下分數，沒有可重現的思考過程 | 整理 Kaggle、DrivenData、AI CUP 與鐵道資料企劃的程式、驗證紀錄與提交結果，明確區分本地驗證與官方成績 |
+| **[Byline](https://github.com/Miiduoa/byline)** | 上游 CSV 改欄位或型別時，分析流程常到最後才壞 | Python CLI 建立可 review 的 dataset contract；檢查欄位、型別、null rate、row count 與 SHA-256，breaking change 可直接擋 CI |
+| **[Aortal](https://github.com/Miiduoa/aortal)** | API payload 的小改動可能直接破壞既有 consumer | Node.js 零 runtime dependency；從 JSON sample 推導 contract，遞迴檢查 required field、型別、nullable 與新增欄位，內建測試與 CI |
 
 ### Systems & analytics labs
 
