@@ -1,39 +1,46 @@
 # 顧晉瑋 · Miiduoa
 
-靜宜大學資訊管理學系
+**Information Management · Decision Support · Applied ML**
 
-以資料分析與應用開發為主，作品涵蓋零售決策支援、文字轉手寫工具與校園助手。
+靜宜大學資訊管理學系。  
+我比較在意的不是「模型用了什麼」，而是資料能不能一路走到**可驗證的決策、介面與產品**。
 
-## 精選作品
+[作品集網站](https://miiduoa.github.io) · [Kaggle](https://www.kaggle.com/kuchinwei) · [Email](mailto:demohan513@gmail.com)
 
-### [零售營運決策支援](https://github.com/Miiduoa/retail-ops-dss)
+---
 
-以合成零售資料練習銷量預測、特徵重要性與補貨／人力規則建議。這是學習與展示用原型，尚未串接真實 POS／ERP。
+## Selected work
 
-`Python` · `scikit-learn` · `Streamlit`
+| 專案 | 我解決的問題 | 做法與證據 |
+|---|---|---|
+| **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 門市補貨與排班容易只靠經驗 | 4 門市 × 4 品類 × 約 730 日合成資料；時間切分、MA-7 baseline、Random Forest、MAE/MAPE、Streamlit 決策介面 |
+| **[Campus One](https://github.com/Miiduoa/graduation)** | 校園資訊分散，學生要在多個系統間找下一步 | Expo + Next.js + Firebase；把課程、訊息、地圖、交通、學習風險與行動建議整合成跨端原型 |
+| **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具多停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語介面、自訂字型與 macOS / Windows 桌面封裝 |
+| **[competition-lab](https://github.com/Miiduoa/competition-lab)** | 競賽容易只留下分數，沒有可重現的思考過程 | 整理 Kaggle、DrivenData、AI CUP 與鐵道資料企劃的程式、驗證紀錄與提交結果，明確區分本地驗證與官方成績 |
 
-### [手寫生成 · nowrite](https://github.com/Miiduoa/nowrite)
+### Recent experiments
 
-將文字渲染為手寫圖片與 PDF，結合網頁介面、繁體中文在地化與桌面打包。衍生自 handwriting-web，核心渲染使用 handright；來源與授權見專案說明。
+- **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 需求預測接到 `(s,S)` 補貨模擬，觀察預測誤差如何影響服務水準與庫存。
+- **[Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)** — 用營運 KPI、What-if 槓桿與規則建議做鐵道營運簡報原型。
 
-`Vue` · `FastAPI` · `Electron`
+---
 
-### [Campus One · 校園助手](https://github.com/Miiduoa/graduation)
+## How I build
 
-校園資訊與行動助手原型，整合行動端、網頁端與後端。示範功能、已知限制與外部服務串接狀態，分別記錄於專案文件。
+**先定義問題，再決定模型。**  
+每個分析專案至少保留 baseline、驗證方式與限制，不把模型分數當成結論。
 
-`Expo` · `Next.js` · `Firebase`
+**把結果做成可以操作的東西。**  
+比起只交 notebook，我更常把結果接成 Web、Mobile、Dashboard 或桌面工具。
 
-### [競賽實驗 · competition-lab](https://github.com/Miiduoa/competition-lab)
+**留下可檢查的證據。**  
+README、截圖、執行方式、資料來源與已知限制都放在 repo 裡，讓別人能快速判斷作品做到哪裡。
 
-整理建模程式、實驗筆記與提交紀錄。閱讀結果時需區分本地驗證與官方成績；資料使用仍遵循各競賽規則。
+---
 
-`Python` · `機器學習` · `實驗紀錄`
+## Stack I actually use
 
-## 其他探索
+`Python` · `scikit-learn` · `Pandas` · `Streamlit`  
+`TypeScript` · `React / Next.js` · `React Native / Expo`  
+`Vue` · `FastAPI` · `Firebase` · `GitHub Actions`
 
-[需求感知補貨 Lite](https://github.com/Miiduoa/demand-sensing-lite) · [鐵道營運簡報 DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)
-
-## 聯絡
-
-[Email](mailto:demohan513@gmail.com) · [Kaggle · kuchinwei](https://www.kaggle.com/kuchinwei)
