@@ -25,23 +25,31 @@
 | **[line-bot](https://github.com/Miiduoa/line-bot)** | Webhook 已接收，但外部 Reply API 暫時失敗時不能直接丟資料 | Python + Flask + SQLite durable inbox/outbox；persistent event dedup、lease、exponential backoff、dead-letter metadata、worker CLI 與 restart tests |
 | **[air](https://github.com/Miiduoa/air)** | IoT ingestion 遇到壞 row 時，不該讓整批資料一起失敗 | Row-level quarantine、freshness / duplicate / range checks、accepted ratio、healthy station ratio、latest lag、pipeline health 與 privacy-minimized quarantine |
 
-### Systems & analytics labs
+### Focused labs
 
-- **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、sample ratio mismatch、funnel 與 event contract；先確認資料與分流可信，再解讀 lift。
-- **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套可測試回測流程。
-- **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — 用 append-only inventory events 重建庫存，檢查重複事件、負庫存與資料一致性。
-- **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯獨立測試。
-- **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — 用 Python AST 與 rubric 檢查函式、參數、迴圈、條件、禁止 API 等結構要求；明確區分 structural feedback 與語意正確性。
-- **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 靜態閱讀器；加權全文搜尋、Service Worker、localStorage 閱讀進度，以及 CI 內容完整性檢查，不為了作品集硬塞 framework。
-- **[n8n / Render SLO Guard](https://github.com/Miiduoa/n8n-render-deploy)** — Synthetic HTTP probes + append-only history；計算 availability、error budget、burn rate、p95 latency 與雙時間窗 alert severity，不把 deployment success 當成 reliability。
-- **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — SQLite schema、foreign key、index、window function、分析查詢與完整性測試；合成資料可重建。
-- **[math · Double-entry Personal Finance Ledger](https://github.com/Miiduoa/math)** — 以 integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益維持帳務一致性。
-- **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training / JSONL data contract / infer-eval config / W&B-TensorBoard tracking；CI 驗證 YAML、DeepSpeed JSON 與資料契約，不宣稱未提供的 benchmark。
-- **[tired · iOS Planning Core](https://github.com/Miiduoa/tired)** — SwiftUI/Firebase App 之外，另抽出純 Swift weekly planner；CI 驗證 priority、deadline、busy blocks、locked tasks 與 daily capacity。
-- **[anyone · Anonymous Feedback Security Lab](https://github.com/Miiduoa/anyone)** — pending privacy、idempotency、moderation audit、rate limiting、production CORS allowlist 與 admin session boundary；Node.js tests + CI。
-- **[PUClass](https://github.com/Miiduoa/puclass)** — 課程時段衝突、每週負荷與作業壓力檢查；核心邏輯以 Node.js 寫成可測試函式。
-- **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 需求預測接到 `(s,S)` 補貨模擬，觀察預測誤差如何影響服務水準與庫存。
-- **[Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)** — 用營運 KPI、What-if 槓桿與規則建議做鐵道營運簡報原型。
+以下只列目前最能代表工程能力、而且有明確驗證方式的實驗；較早期課堂練習保留在 GitHub 當學習紀錄，不放進首頁精選。
+
+#### Data & decision quality
+
+- **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、SRM、funnel 與 event contract；先確認分流與資料可信，再解讀 lift。
+- **[byline · CSV Contract Checker](https://github.com/Miiduoa/byline)** — 欄位、型別、缺值率、unique count 與 SHA-256 manifest；在 CI 先擋 schema drift。
+- **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放在同一套回測流程。
+- **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — schema、foreign key、constraint、index、window function、分析 SQL 與完整性測試。
+
+#### Systems & reliability
+
+- **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — append-only inventory events、replayable balances、duplicate-event 與 negative-inventory checks。
+- **[line-bot · Reliable Webhook Service](https://github.com/Miiduoa/line-bot)** — HMAC 簽章、idempotency、rate limit、command routing 與 Reply API boundary。
+- **[anyone · Anonymous Feedback Security Lab](https://github.com/Miiduoa/anyone)** — pending privacy、moderation audit、idempotency、production CORS allowlist 與 admin session boundary。
+- **[n8n-render-deploy · SLO Guard](https://github.com/Miiduoa/n8n-render-deploy)** — synthetic probe、availability / latency、error budget 與 multi-window burn rate。
+
+#### Mobile & applied ML
+
+- **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake。
+- **[tired · iOS Planning Core](https://github.com/Miiduoa/tired)** — 從 SwiftUI/Firebase App 抽出純 Swift weekly planner，測 priority、deadline、busy blocks、locked tasks 與 capacity。
+- **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — 用 Python AST + rubric 檢查函式、參數、控制流程與禁止 API，明確限制 structural feedback 的邊界。
+- **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
+
 
 ---
 
