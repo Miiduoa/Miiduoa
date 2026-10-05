@@ -28,6 +28,7 @@
 - **[line-bot · Reliable Webhook Service](https://github.com/Miiduoa/line-bot)** — LINE HMAC 簽章驗證、event idempotency、per-source rate limit、command routing 與 Reply API 邊界分離。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — 用 Python AST 與 rubric 檢查函式、參數、迴圈、條件、禁止 API 等結構要求；明確區分 structural feedback 與語意正確性。
 - **[air · IoT Sensor Network Monitor](https://github.com/Miiduoa/air)** — 檢查感測站座標、資料新鮮度、異常值與重複上報，並以 Haversine 找最近可用站點。
+- **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — SQLite schema、foreign key、index、window function、分析查詢與完整性測試；合成資料可重建。
 - **[PUClass](https://github.com/Miiduoa/puclass)** — 課程時段衝突、每週負荷與作業壓力檢查；核心邏輯以 Node.js 寫成可測試函式。
 - **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 需求預測接到 `(s,S)` 補貨模擬，觀察預測誤差如何影響服務水準與庫存。
 - **[Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)** — 用營運 KPI、What-if 槓桿與規則建議做鐵道營運簡報原型。
