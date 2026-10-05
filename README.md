@@ -15,7 +15,7 @@
 |---|---|---|
 | **[Campus One](https://github.com/Miiduoa/graduation)** | 校園資訊分散，學生要在多個系統間找下一步 | Expo + Next.js + Firebase；整合課程、訊息、地圖、交通、學習風險與行動建議，保留跨端驗證與規則 |
 | **[Nolu](https://github.com/Miiduoa/web)** | 登入、主要 region 或網路出問題時，資料與身份邊界仍要保持正確 | PWA + Supabase；hot standby、durable outbox、Ed25519 replication、guest privacy、provider mesh 與 resilience contract tests |
-| **[Tired](https://github.com/Miiduoa/tired)** | 多重身份下的任務、課程與時間容易互相衝突 | SwiftUI + Firebase；另外抽出純 Swift PlanningCore，測 priority、deadline、busy block、locked task 與 daily capacity |
+| **[Byline](https://github.com/Miiduoa/byline)** | 上游 CSV 改欄位或型別時，分析流程常到最後才壞 | Python CLI 建立 dataset contract；檢查欄位、型別、null rate、row count 與 SHA-256，breaking change 可直接擋 CI |
 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 門市補貨與排班容易只靠經驗 | 時間切分、MA-7 baseline、Random Forest、MAE/MAPE，加上 Streamlit 決策介面 |
 | **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具常停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語、自訂字型與 macOS / Windows 封裝 |
 | **[Reliable LINE Webhook](https://github.com/Miiduoa/line-bot)** | Webhook 已接收，但外部 Reply API 暫時失敗時不能直接丟資料 | Flask + SQLite durable inbox/outbox、persistent event dedup、lease、retry/backoff、dead-letter 與 restart tests |
@@ -30,7 +30,6 @@
 
 - **[competition-lab](https://github.com/Miiduoa/competition-lab)** — 整理 Kaggle、DrivenData、AI CUP 與鐵道資料企劃；明確區分本地驗證、baseline 與官方成績。
 - **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、SRM、funnel 與 event contract；先確認分流與資料可信，再解讀 lift。
-- **[Byline · CSV Contract Checker](https://github.com/Miiduoa/byline)** — 欄位、型別、缺值率、row count 與 SHA-256 contract；在 CI 先擋 schema drift。
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套回測流程。
 - **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — schema、foreign key、constraint、index、window function、分析 SQL 與完整性測試。
 
@@ -43,6 +42,7 @@
 
 #### Mobile, learning & ML
 
+- **[Tired · PlanningCore](https://github.com/Miiduoa/tired)** — 純 Swift weekly planner；可測 priority、deadline、busy blocks、locked tasks 與 capacity。完整 iOS source 保留，但 repo 目前沒有 Xcode project metadata，因此不把完整 App 當成可重現成果。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯可獨立測試。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — Python AST + rubric 檢查函式、參數、控制流程與禁止 API，清楚限制 structural feedback 的邊界。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
