@@ -38,12 +38,12 @@
 
 - **[Aortal · API Contract Guard](https://github.com/Miiduoa/aortal)** — 從 JSON sample 推導 contract，檢查 required field、型別、nullable 與 breaking change。
 - **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — append-only inventory events、replayable balances、duplicate-event 與 negative-inventory checks。
-- **[n8n / Render SLO Guard](https://github.com/Miiduoa/n8n-render-deploy)** — synthetic probe、availability、error budget、burn rate、p95 latency 與 multi-window severity。
+- **[bitest · BI Regression Checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，CI 直接阻擋資料品質退化。
 - **[math · Double-entry Ledger](https://github.com/Miiduoa/math)** — integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益。
 
 #### Mobile, learning & ML
 
-- **[Tired · PlanningCore](https://github.com/Miiduoa/tired)** — 純 Swift weekly planner；可測 priority、deadline、busy blocks、locked tasks 與 capacity。完整 iOS source 保留，但 repo 目前沒有 Xcode project metadata，因此不把完整 App 當成可重現成果。
+- **[PlanningCore · Swift](https://github.com/Miiduoa/tired/tree/main)** — 純 Swift weekly planner；可測 priority、deadline、busy blocks、locked tasks 與 capacity。只連到已整理的 `main` 實作，不把未驗證的完整 App 當成成果。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯可獨立測試。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — Python AST + rubric 檢查函式、參數、控制流程與禁止 API，清楚限制 structural feedback 的邊界。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
