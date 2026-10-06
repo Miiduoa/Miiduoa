@@ -15,8 +15,8 @@
 |---|---|---|
 | **[Campus One](https://github.com/Miiduoa/graduation)** | 校園資訊分散，學生要在多個系統間找下一步 | Expo + Next.js + Firebase；整合課程、訊息、地圖、交通、學習風險與行動建議，保留跨端驗證與規則 |
 | **[Nolu](https://github.com/Miiduoa/web)** | 登入、主要 region 或網路出問題時，資料與身份邊界仍要保持正確 | PWA + Supabase；hot standby、durable outbox、Ed25519 replication、guest privacy、provider mesh 與 resilience contract tests |
-| **[Byline](https://github.com/Miiduoa/byline)** | 上游 CSV 改欄位或型別時，分析流程常到最後才壞 | Python CLI 建立 dataset contract；檢查欄位、型別、null rate、row count 與 SHA-256，breaking change 可直接擋 CI |
 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 門市補貨與排班容易只靠經驗 | 時間切分、MA-7 baseline、Random Forest、MAE/MAPE，加上 Streamlit 決策介面 |
+| **[Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss)** | 營運異常發生時，值班資訊很多，但不一定知道哪個區段該先處理 | incident contract、重複事件去重、active window、情境衝擊、priority ranking 與 Markdown briefing；合成情境與真實營運資料明確分開 |
 | **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具常停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語、自訂字型與 macOS / Windows 封裝 |
 | **[Reliable LINE Webhook](https://github.com/Miiduoa/line-bot)** | Webhook 已接收，但外部 Reply API 暫時失敗時不能直接丟資料 | Flask + SQLite durable inbox/outbox、persistent event dedup、lease、retry/backoff、dead-letter 與 restart tests |
 
@@ -31,7 +31,7 @@
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套回測流程。
 - **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 合成需求、嚴格時間切分、HistGradientBoosting forecast，再接 (s,S) / Days-of-Cover 補貨模擬與服務水準／庫存 KPI；end-to-end CI 可重現。
 - **[DriveCost Lab](https://github.com/Miiduoa/pucar)** — 把車貸、折舊、油耗、稅費、保險與保養放進同一個持有成本模型；情境可透過 URL 保存，核心計算有單元測試。
-- **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — schema、foreign key、constraint、index、window function、分析 SQL 與完整性測試。
+- **[Byline](https://github.com/Miiduoa/byline)** — CSV dataset contract；欄位、型別、null rate、row count 與 SHA-256 可被 code review，breaking change 可直接擋 CI。
 
 #### Systems & reliability
 
@@ -47,9 +47,9 @@
 
 #### Mobile, learning & ML
 
+- **[PUClass · Schedule Feasibility Engine](https://github.com/Miiduoa/puclass)** — 不只抓衝堂，也檢查跨校舍移動、tight / unknown transition、alternative section 搜尋與 timezone-aware ICS 匯出；核心規則無框架依賴並有 Node 測試。
 - **[PlanningCore · Swift](https://github.com/Miiduoa/tired/tree/main)** — 純 Swift weekly planner；可測 priority、deadline、busy blocks、locked tasks 與 capacity。只連到已整理的 `main` 實作，不把未驗證的完整 App 當成成果。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯可獨立測試。
-- **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — Python AST + rubric 檢查函式、參數、控制流程與禁止 API，清楚限制 structural feedback 的邊界。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
 - **[Grounded Search Lab](https://github.com/Miiduoa/cloudchatbot)** — 先做 BM25 retrieval、來源保留與 abstain，再用 Recall@k / MRR 檢查檢索品質；示範資料與正式規章清楚分開。
 - **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 閱讀器；加權搜尋、Service Worker、localStorage 進度與內容完整性檢查。
