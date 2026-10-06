@@ -19,8 +19,6 @@
 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 門市補貨與排班容易只靠經驗 | 時間切分、MA-7 baseline、Random Forest、MAE/MAPE，加上 Streamlit 決策介面 |
 | **[nowrite](https://github.com/Miiduoa/nowrite)** | 文字轉手寫工具常停在單次腳本，缺少完整操作流程 | Vue + FastAPI + Electron；支援圖片 / PDF、多語、自訂字型與 macOS / Windows 封裝 |
 | **[Reliable LINE Webhook](https://github.com/Miiduoa/line-bot)** | Webhook 已接收，但外部 Reply API 暫時失敗時不能直接丟資料 | Flask + SQLite durable inbox/outbox、persistent event dedup、lease、retry/backoff、dead-letter 與 restart tests |
-| **[IoT Sensor Data Pipeline](https://github.com/Miiduoa/air)** | 一筆壞感測資料不該讓整批 ingestion 失敗 | Row-level quarantine、freshness / duplicate / range checks、accepted ratio、latest lag 與 pipeline health |
-| **[anyone](https://github.com/Miiduoa/anyone)** | 匿名回饋服務要同時處理重複送出、審核與隱私邊界 | Express；Idempotency-Key、rate limit、pending moderation、append-only audit trail 與 Node built-in tests |
 
 ### Focused labs
 
@@ -37,6 +35,8 @@
 
 #### Systems & reliability
 
+- **[IoT Sensor Data Pipeline](https://github.com/Miiduoa/air)** — Row-level quarantine、freshness / duplicate / range checks、accepted ratio、latest lag 與 pipeline health；壞 row 不拖垮整批 ingestion。
+- **[anyone](https://github.com/Miiduoa/anyone)** — 匿名回饋服務；Idempotency-Key、rate limit、pending moderation、append-only audit trail 與 Node built-in tests。
 - **[Aortal · API Contract Guard](https://github.com/Miiduoa/aortal)** — 從 JSON sample 推導 contract，檢查 required field、型別、nullable 與 breaking change。
 - **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — append-only inventory events、replayable balances、duplicate-event 與 negative-inventory checks。
 - **[bitest · BI Regression Checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，CI 直接阻擋資料品質退化。
