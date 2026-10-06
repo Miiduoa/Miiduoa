@@ -32,6 +32,7 @@
 - **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、SRM、funnel 與 event contract；先確認分流與資料可信，再解讀 lift。
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套回測流程。
 - **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 合成需求、嚴格時間切分、HistGradientBoosting forecast，再接 (s,S) / Days-of-Cover 補貨模擬與服務水準／庫存 KPI；end-to-end CI 可重現。
+- **[DriveCost Lab](https://github.com/Miiduoa/pucar)** — 把車貸、折舊、油耗、稅費、保險與保養放進同一個持有成本模型；情境可透過 URL 保存，核心計算有單元測試。
 - **[0925SQL · SQL Analytics Mart](https://github.com/Miiduoa/0925SQL)** — schema、foreign key、constraint、index、window function、分析 SQL 與完整性測試。
 
 #### Systems & reliability
@@ -40,6 +41,7 @@
 - **[ERP · Inventory Event Ledger](https://github.com/Miiduoa/ERP)** — append-only inventory events、replayable balances、duplicate-event 與 negative-inventory checks。
 - **[bitest · BI Regression Checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，CI 直接阻擋資料品質退化。
 - **[math · Double-entry Ledger](https://github.com/Miiduoa/math)** — integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益。
+- **[EventOps Console](https://github.com/Miiduoa/misnew)** — 離線活動簽到與容量控制；append-only event log、event id 去重、replay、localStorage 與基本 PWA offline shell。
 
 #### Mobile, learning & ML
 
@@ -47,6 +49,7 @@
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯可獨立測試。
 - **[learnpy · Python Practice Judge](https://github.com/Miiduoa/learnpy)** — Python AST + rubric 檢查函式、參數、控制流程與禁止 API，清楚限制 structural feedback 的邊界。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
+- **[Grounded Search Lab](https://github.com/Miiduoa/cloudchatbot)** — 先做 BM25 retrieval、來源保留與 abstain，再用 Recall@k / MRR 檢查檢索品質；示範資料與正式規章清楚分開。
 - **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 閱讀器；加權搜尋、Service Worker、localStorage 進度與內容完整性檢查。
 
 ---
