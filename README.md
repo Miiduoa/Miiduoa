@@ -42,6 +42,8 @@
 - **[bitest · BI Regression Checks](https://github.com/Miiduoa/bitest)** — 對 baseline / current CSV 做 schema、row count、null rate、主鍵重複與指標漂移檢查，CI 直接阻擋資料品質退化。
 - **[math · Double-entry Ledger](https://github.com/Miiduoa/math)** — integer minor units、借貸平衡、duplicate transaction guard、trial balance 與月度損益。
 - **[EventOps Console](https://github.com/Miiduoa/misnew)** — 離線活動簽到與容量控制；append-only event log、event id 去重、replay、localStorage 與基本 PWA offline shell。
+- **[Policy Gate](https://github.com/Miiduoa/class501)** — 可解釋的授權 policy evaluator；RBAC + attribute conditions、deny-overrides、deterministic rule ordering 與 decision explanation。Repo 保留舊歷史憑證風險說明，不隱藏安全邊界。
+- **[Webhook SLO Workbench](https://github.com/Miiduoa/line-bot-app)** — 把 eventual success 與 first-attempt reliability 分開，計算 p95 latency、retry recovery、error budget、burn rate 與 incident windows。
 
 #### Mobile, learning & ML
 
