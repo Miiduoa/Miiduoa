@@ -23,6 +23,8 @@
 | **[Tracefold](https://github.com/Miiduoa/tracefold)** · [開啟工具](https://miiduoa.github.io/tracefold/) | 從 HAR 找出慢請求、傳輸量與網路錯誤 | 時間軸 · 本機分析 · 實際網站案例 |
 | **[Patchday](https://github.com/Miiduoa/patchday)** · [範例報告](https://miiduoa.github.io/patchday/) | 在獨立快照預演 SQLite migration | 交易回滾 · Schema 差異 · 資料損失警示 |
 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 銷量預測接到補貨與人力規劃 | Python · 時間切分 · Baseline 比較 |
+| **[Carry](https://miiduoa.github.io/tools/carry/)** · [計算模型](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/tools/carry) | 貸款與現金購買的期末淨資產比較；納入剩餘債務與四種投資情境 | JavaScript · 現金流模型 · 數學測試 |
+| **[Capacity](https://miiduoa.github.io/tools/capacity/)** · [計算模型](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/tools/capacity) | 服務席次的排隊機率、尖峰負載及目標等待時間比較 | Erlang C · 排隊理論 · SVG · 測試 |
 
 <a href="https://miiduoa.github.io/stillroom/"><img src="https://raw.githubusercontent.com/Miiduoa/stillroom/main/docs/screenshot.jpg" width="49%" alt="Stillroom 圖片交付工作台" /></a>
 <a href="https://miiduoa.github.io/cuework/"><img src="https://raw.githubusercontent.com/Miiduoa/cuework/main/docs/screenshot.jpg" width="49%" alt="Cuework 字幕編輯工作台" /></a>
