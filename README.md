@@ -37,6 +37,9 @@
 
 #### Systems & reliability
 
+- **[TxnScope](https://miiduoa.github.io/labs/txnscope/)** — Optimistic concurrency 小型實驗；用 snapshot version、compare-on-commit、conflict 與 retry 把 lost update 做成可重現情境。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/txnscope)。
+- **[SessionSentry](https://miiduoa.github.io/labs/sessionsentry/)** — 防禦型 session lifecycle；rotation、idle / absolute expiry、revocation、stale-token replay 與 CSRF mutation check。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/sessionsentry)。
+- **[Eventlane](https://miiduoa.github.io/labs/eventlane/)** — At-least-once event consumer；idempotency、exponential retry、poison event、DLQ 與 repair/replay。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/eventlane)。
 - **[Syncbench](https://miiduoa.github.io/labs/syncbench/)** — Local-first 同步實驗；兩個 replica、per-field logical clock、離線衝突、deterministic merge、convergence / idempotency 測試。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/syncbench)。
 - **[Rampwatch](https://miiduoa.github.io/labs/rampwatch/)** — Progressive delivery guardrail；用 error rate、95% Wilson interval 與 p95 latency 決定 canary advance / hold / rollback，並保留可測的門檻政策。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/rampwatch)。
 - **[IoT Sensor Data Pipeline](https://github.com/Miiduoa/air)** — Row-level quarantine、freshness / duplicate / range checks、accepted ratio、latest lag 與 pipeline health；壞 row 不拖垮整批 ingestion。
