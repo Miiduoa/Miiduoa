@@ -27,7 +27,7 @@
 #### Data & decision quality
 
 - **[competition-lab](https://github.com/Miiduoa/competition-lab)** — 整理 Kaggle、DrivenData、AI CUP 與鐵道資料企劃；明確區分本地驗證、baseline 與官方成績。
-- **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、SRM、funnel 與 event contract；先確認分流與資料可信，再解讀 lift。
+- **[mymis · Product Analytics Lab](https://github.com/Miiduoa/mymis)** — A/B test、confidence interval、SRM、MDE、guardrails、funnel 與 timezone-aware cohort retention；把資料品質、實驗有效性與後續留存放在同一條可驗證流程。
 - **[stock · Walk-forward Backtest Lab](https://github.com/Miiduoa/stock)** — 把 look-ahead bias、交易成本、benchmark 與 walk-forward 驗證放進同一套回測流程。
 - **[Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite)** — 多 SKU 合成需求、嚴格時間切分、HistGradientBoosting forecast，再接 (s,S) / Days-of-Cover 補貨模擬與服務水準／庫存 KPI；end-to-end CI 可重現。
 - **[DriveCost Lab](https://github.com/Miiduoa/pucar)** — 把車貸、折舊、油耗、稅費、保險與保養放進同一個持有成本模型；情境可透過 URL 保存，核心計算有單元測試。
