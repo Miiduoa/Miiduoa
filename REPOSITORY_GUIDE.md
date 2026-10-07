@@ -13,12 +13,14 @@ Mobile + Web + Backend 的校園產品 monorepo。
 - [Case study](https://miiduoa.github.io/case-studies/campus-one/)
 - [2-minute reviewer path](https://github.com/Miiduoa/graduation/blob/main/docs/REVIEW_IN_2_MINUTES.md)
 
-## Product-quality tools
+## Tools
 
 這些專案有明確使用情境、可操作介面與可檢查限制：
 
 | Repo | Focus |
 |---|---|
+| [Contractscope](https://github.com/Miiduoa/contractscope) | OpenAPI 合約比較、變更風險與 CLI；[設計與規則範圍](https://github.com/Miiduoa/contractscope/blob/main/docs/design.zh-TW.md) |
+| [Motionbench](https://github.com/Miiduoa/motionbench) | 彈簧與 Bézier 動畫工作台；[模型與驗證](https://github.com/Miiduoa/motionbench/blob/main/docs/design.zh-TW.md) |
 | [Switchback](https://github.com/Miiduoa/switchback) | 本機 GPX 路線與海拔分析，支援繁中／英文 |
 | [Roomtone](https://github.com/Miiduoa/roomtone) | 本機音訊剪輯、淡入淡出與 WAV 匯出，支援繁中／英文 |
 | [Stillroom](https://github.com/Miiduoa/stillroom) | browser image delivery workbench |
@@ -84,4 +86,4 @@ Mobile + Web + Backend 的校園產品 monorepo。
 3. 失敗、權限與資料邊界怎麼處理？
 4. 哪些事情沒有被假裝成已完成？
 
-如果只想快速審查，從 Campus One → Stillroom / Cuework → Tracefold / Patchday → engineering labs 這條路徑即可。
+快速審查可以先看 Campus One 的跨端整合，再依主題選擇：Contractscope 的介面變更規則、Retail Ops DSS 的決策分析，或 Motionbench 的互動模型。每個專案都可以從範例、核心實作與測試交叉檢查。

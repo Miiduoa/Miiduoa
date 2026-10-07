@@ -4,16 +4,18 @@
 
 [作品集](https://miiduoa.github.io) · [Campus One 案例介紹](https://miiduoa.github.io/case-studies/campus-one/) · [專案導覽](REPOSITORY_GUIDE.md) · [Kaggle](https://www.kaggle.com/kuchinwei) · [Email](mailto:demohan513@gmail.com)
 
-> 第一次審查這個帳號：先看 **Campus One**，再看精選作品。未列在這裡的 repository 可能是技術研究、早期課堂重做或已被取代的歷史版本，不代表目前主線品質。
+從 **Campus One** 的案例介紹開始，或直接開啟下面的工具。各專案附有執行方式、測試與設計限制。
 
 ## 精選作品
 
-<a href="https://miiduoa.github.io/switchback/"><img src="https://raw.githubusercontent.com/Miiduoa/switchback/main/docs/screenshot.png" width="49%" alt="Switchback 路線與海拔分析" /></a>
-<a href="https://miiduoa.github.io/roomtone/"><img src="https://raw.githubusercontent.com/Miiduoa/roomtone/main/docs/screenshot.png" width="49%" alt="Roomtone 波形剪輯與音訊處理" /></a>
+<a href="https://miiduoa.github.io/contractscope/"><img src="https://raw.githubusercontent.com/Miiduoa/contractscope/main/docs/screenshot.png" width="49%" alt="Contractscope API 合約比較與變更風險" /></a>
+<a href="https://miiduoa.github.io/motionbench/"><img src="https://raw.githubusercontent.com/Miiduoa/motionbench/main/docs/screenshot.png" width="49%" alt="Motionbench 動畫曲線與互動預覽" /></a>
 
 | 作品 | 用途 | 技術重點 |
 | --- | --- | --- |
 | **[Campus One](https://github.com/Miiduoa/graduation)** · [案例介紹](https://miiduoa.github.io/case-studies/campus-one/) | **旗艦專案**：把課程、訊息、地圖、交通與角色資料流接成同一套跨端校園產品 | Expo · Next.js · Firebase · shared contracts · rules tests · CI / E2E |
+| **[Contractscope](https://github.com/Miiduoa/contractscope)** · [開啟工具](https://miiduoa.github.io/contractscope/) | 比較兩版 OpenAPI 合約，檢查呼叫端可能受到的影響 | TypeScript · 相容性規則 · CLI · [設計說明](https://github.com/Miiduoa/contractscope/blob/main/docs/design.zh-TW.md) |
+| **[Motionbench](https://github.com/Miiduoa/motionbench)** · [開啟工具](https://miiduoa.github.io/motionbench/) | 調整彈簧與 Bézier 動畫，查看曲線並匯出程式碼 | TypeScript · 數值模型 · CSS easing · [設計說明](https://github.com/Miiduoa/motionbench/blob/main/docs/design.zh-TW.md) |
 | **[Switchback](https://github.com/Miiduoa/switchback)** · [開啟工具](https://miiduoa.github.io/switchback/) | 讀取 GPX 路線，在路線圖與海拔剖面間查看分段紀錄 | TypeScript · 地理計算 · SVG 連動檢視 |
 | **[Roomtone](https://github.com/Miiduoa/roomtone)** · [開啟工具](https://miiduoa.github.io/roomtone/) | 剪取音訊、調整淡入淡出與音量，匯出 WAV | Web Audio · 波形選段 · PCM 編碼 |
 | **[Stillroom](https://github.com/Miiduoa/stillroom)** · [開啟工具](https://miiduoa.github.io/stillroom/) | 在瀏覽器整理圖片尺寸、格式與交付檔案 | TypeScript · Canvas · 批次處理 · ZIP 匯出 |
