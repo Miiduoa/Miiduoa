@@ -37,6 +37,9 @@
 
 #### Systems & reliability
 
+- **[Tracepath](https://miiduoa.github.io/labs/tracepath/)** — Distributed tracing 結構分析；parent/child validation、exclusive time、重疊 child span union、boundary anomaly 與 service contribution。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/tracepath)。
+- **[Flagrail](https://miiduoa.github.io/labs/flagrail/)** — Feature flag evaluator；ordered targeting、stable hash rollout、kill switch、fail-closed invalid config 與 decision reason。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/flagrail)。
+- **[LineageGuard](https://miiduoa.github.io/labs/lineageguard/)** — Column-level schema evolution impact；breaking/additive diff、multi-hop lineage、renamed downstream columns 與 blast radius。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/lineageguard)。
 - **[TxnScope](https://miiduoa.github.io/labs/txnscope/)** — Optimistic concurrency 小型實驗；用 snapshot version、compare-on-commit、conflict 與 retry 把 lost update 做成可重現情境。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/txnscope)。
 - **[SessionSentry](https://miiduoa.github.io/labs/sessionsentry/)** — 防禦型 session lifecycle；rotation、idle / absolute expiry、revocation、stale-token replay 與 CSRF mutation check。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/sessionsentry)。
 - **[Eventlane](https://miiduoa.github.io/labs/eventlane/)** — At-least-once event consumer；idempotency、exponential retry、poison event、DLQ 與 repair/replay。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/eventlane)。
