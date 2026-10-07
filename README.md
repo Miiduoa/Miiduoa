@@ -1,8 +1,10 @@
 # 顧晉瑋 · Miiduoa
 
-靜宜大學資訊管理學系。Web 產品、資料分析與開發工具。
+靜宜大學資訊管理學系。跨端產品、資料分析與可靠性工程。
 
-[作品集](https://miiduoa.github.io) · [Kaggle](https://www.kaggle.com/kuchinwei) · [Email](mailto:demohan513@gmail.com)
+[作品集](https://miiduoa.github.io) · [Campus One Case Study](https://miiduoa.github.io/case-studies/campus-one/) · [Repository Guide](REPOSITORY_GUIDE.md) · [Kaggle](https://www.kaggle.com/kuchinwei) · [Email](mailto:demohan513@gmail.com)
+
+> 第一次審查這個帳號：先看 **Campus One**，再看 Selected work。未列在這裡的 repository 可能是技術研究、早期課堂重做或已被取代的歷史版本，不代表目前主線品質。
 
 ## Selected work
 
