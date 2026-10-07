@@ -19,6 +19,8 @@ Mobile + Web + Backend 的校園產品 monorepo。
 
 | Repo | Focus |
 |---|---|
+| [Foldpress](https://github.com/Miiduoa/foldpress) | PDF 小冊子拼版，確認頁序後匯出列印檔；[設計與限制](https://github.com/Miiduoa/foldpress/blob/main/docs/decisions.md) |
+| [Relaylab](https://github.com/Miiduoa/relaylab) | 佇列投遞、租約競爭與種子重播；[模型與邊界](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md) |
 | [Contractscope](https://github.com/Miiduoa/contractscope) | OpenAPI 合約比較、變更風險與 CLI；[設計與規則範圍](https://github.com/Miiduoa/contractscope/blob/main/docs/design.zh-TW.md) |
 | [Motionbench](https://github.com/Miiduoa/motionbench) | 彈簧與 Bézier 動畫工作台；[模型與驗證](https://github.com/Miiduoa/motionbench/blob/main/docs/design.zh-TW.md) |
 | [Switchback](https://github.com/Miiduoa/switchback) | 本機 GPX 路線與海拔分析，支援繁中／英文 |
@@ -86,4 +88,4 @@ Mobile + Web + Backend 的校園產品 monorepo。
 3. 失敗、權限與資料邊界怎麼處理？
 4. 哪些事情沒有被假裝成已完成？
 
-快速審查可以先看 Campus One 的跨端整合，再依主題選擇：Contractscope 的介面變更規則、Retail Ops DSS 的決策分析，或 Motionbench 的互動模型。每個專案都可以從範例、核心實作與測試交叉檢查。
+快速審查可以先看 Campus One 的跨端整合，再依主題選擇：Foldpress 的 PDF 頁序與輸出、Relaylab 的重試與去重模型、Contractscope 的介面變更規則，或 Retail Ops DSS 的決策分析。每個專案都可以從範例、核心實作與測試交叉檢查。
