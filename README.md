@@ -50,6 +50,7 @@
 - **[PUClass · Schedule Feasibility Engine](https://github.com/Miiduoa/puclass)** — 不只抓衝堂，也檢查跨校舍移動、tight / unknown transition、alternative section 搜尋與 timezone-aware ICS 匯出；核心規則無框架依賴並有 Node 測試。
 - **[PlanningCore · Swift](https://github.com/Miiduoa/tired/tree/main)** — 純 Swift weekly planner；可測 priority、deadline、busy blocks、locked tasks 與 capacity。只連到已整理的 `main` 實作，不把未驗證的完整 App 當成成果。
 - **[Gesture · Motion Lab](https://github.com/Miiduoa/Gesture)** — Android accelerometer → magnitude → RMS / peak → Steady / Moving / Shake；分類邏輯可獨立測試。
+- **[Game2D.2 · Deterministic Simulation Lab](https://github.com/Miiduoa/Game2D.2)** — 60 Hz fixed-step、AABB collision、seeded PRNG、replay checksum 與 regression tests；同一 seed + input sequence 必須得到完全相同狀態。
 - **[llm · Fine-tuning Pipeline Lab](https://github.com/Miiduoa/llm)** — LoRA training、JSONL contract、infer/eval config、tracking 與 config/data CI；不宣稱未提供的 benchmark。
 - **[Grounded Search Lab](https://github.com/Miiduoa/cloudchatbot)** — 先做 BM25 retrieval、來源保留與 abstain，再用 Recall@k / MRR 檢查檢索品質；示範資料與正式規章清楚分開。
 - **[CS Notes Reader](https://github.com/Miiduoa/cs-textbook-site)** — Offline-first 閱讀器；加權搜尋、Service Worker、localStorage 進度與內容完整性檢查。
