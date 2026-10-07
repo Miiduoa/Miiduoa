@@ -37,6 +37,8 @@
 
 #### Systems & reliability
 
+- **[Syncbench](https://miiduoa.github.io/labs/syncbench/)** — Local-first 同步實驗；兩個 replica、per-field logical clock、離線衝突、deterministic merge、convergence / idempotency 測試。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/syncbench)。
+- **[Rampwatch](https://miiduoa.github.io/labs/rampwatch/)** — Progressive delivery guardrail；用 error rate、95% Wilson interval 與 p95 latency 決定 canary advance / hold / rollback，並保留可測的門檻政策。原始碼在 [portfolio repo](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs/rampwatch)。
 - **[IoT Sensor Data Pipeline](https://github.com/Miiduoa/air)** — Row-level quarantine、freshness / duplicate / range checks、accepted ratio、latest lag 與 pipeline health；壞 row 不拖垮整批 ingestion。
 - **[anyone](https://github.com/Miiduoa/anyone)** — 匿名回饋服務；Idempotency-Key、rate limit、pending moderation、append-only audit trail 與 Node built-in tests。
 - **[Aortal · API Contract Guard](https://github.com/Miiduoa/aortal)** — 從 JSON sample 推導 contract，檢查 required field、型別、nullable 與 breaking change。
