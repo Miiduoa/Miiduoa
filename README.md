@@ -13,8 +13,8 @@
 
 | 專案 | 我解決的問題 | 做法與證據 |
 |---|---|---|
-| **[Tracefold](https://github.com/Miiduoa/tracefold)** · [操作](https://miiduoa.github.io/tracefold/) | 匯出的 HAR 很難快速看出哪個請求最慢、最大或失敗 | TypeScript 本機分析工作台；時間軸、p95、sweep-line 併發計算、隱私欄位裁減與 18 項核心測試 |
-| **[Patchday](https://github.com/Miiduoa/patchday)** · [報告](https://miiduoa.github.io/patchday/) | SQLite migration 語法正確，套到既有資料仍可能失敗或刪掉資料 | 唯讀 snapshot、整批交易、外鍵與完整性檢查、schema diff、資料減少警示與 23 項測試 |
+| **[Tracefold](https://github.com/Miiduoa/tracefold)** · [操作](https://miiduoa.github.io/tracefold/) | 匯出的 HAR 很難快速看出哪個請求最慢、最大或失敗 | TypeScript 本機分析；實際網站紀錄、時間軸、28 項測試與[一萬筆壓力測試](https://github.com/Miiduoa/tracefold/blob/main/docs/cases/stress.md) |
+| **[Patchday](https://github.com/Miiduoa/patchday)** · [報告](https://miiduoa.github.io/patchday/) | SQLite migration 語法正確，套到既有資料仍可能失敗或刪掉資料 | 唯讀 snapshot、交易回滾、欄位／筆數損失警示；31 項測試與[Chinook 五情境驗證](https://github.com/Miiduoa/patchday/blob/main/docs/cases/chinook/README.md) |
 | **[Campus One](https://github.com/Miiduoa/graduation)** | 校園資訊分散，學生要在多個系統間找下一步 | Expo + Next.js + Firebase；整合課程、訊息、地圖、交通、學習風險與行動建議，保留跨端驗證與規則 |
 | **[Nolu](https://github.com/Miiduoa/web)** | 登入、主要 region 或網路出問題時，資料與身份邊界仍要保持正確 | PWA + Supabase；hot standby、durable outbox、Ed25519 replication、guest privacy、provider mesh 與 resilience contract tests |
 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 門市補貨與排班容易只靠經驗 | 時間切分、MA-7 baseline、Random Forest、MAE/MAPE，加上 Streamlit 決策介面 |
