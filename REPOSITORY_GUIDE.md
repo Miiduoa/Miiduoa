@@ -28,12 +28,11 @@ Campus One 是整合型系統；其餘四個作品各自處理一個能被測試
 
 這些是刻意縮小範圍的模型或互動示範，**不是完整 SaaS 產品**。另外還有 [ERP](https://github.com/Miiduoa/ERP)、[learnpy](https://github.com/Miiduoa/learnpy)、[Game2D.2](https://github.com/Miiduoa/Game2D.2) 等題目，保留作為技術練習紀錄。
 
-## 歷史版本與目前不主推的儲存庫
+## 歷史版本與展示範圍
 
-- [campus-one-v2](https://github.com/Miiduoa/campus-one-v2) 和 [campus-one-v12-prototypes](https://github.com/Miiduoa/campus-one-v12-prototypes) 屬於 Campus One 之前的探索與原型。
-- [nuni-prod](https://github.com/Miiduoa/nuni-prod) 已封存。
-- 名稱為 [「-」](https://github.com/Miiduoa/-) 的 repository 是早期帳號紀錄，不列為作品。
-- 其餘課堂練習、實驗分支與尚未整合的專案仍可在 [Repositories](https://github.com/Miiduoa?tab=repositories) 查到，但不代表目前主力作品的完成度。
+Campus One 早期架構、設計原型與測試部署環境保留在私人儲存庫，不列入公開作品；公開導覽不連到需要權限才能開啟的頁面。
+
+[ERP](https://github.com/Miiduoa/ERP)、[learnpy](https://github.com/Miiduoa/learnpy)、[Game2D.2](https://github.com/Miiduoa/Game2D.2) 等是練習與歷史紀錄，不和上面的精選專案混作已交付產品。完整公開清單可從 [Repositories](https://github.com/Miiduoa?tab=repositories) 查看。
 
 ## 檢查一個專案的方式
 
