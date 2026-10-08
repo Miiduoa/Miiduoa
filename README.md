@@ -26,7 +26,7 @@
 
 **TypeScript · OpenAPI · Browser + CLI**
 
-[操作工具](https://miiduoa.github.io/contractscope/) · [規則與限制](https://github.com/Miiduoa/contractscope/blob/main/docs/rules.md)
+[線上操作](https://miiduoa.github.io/contractscope/) · [工程案例](https://miiduoa.github.io/case-studies/contractscope/) · [規則與限制](https://github.com/Miiduoa/contractscope/blob/main/docs/rules.md)
 
 ### 03 — [Relaylab](https://github.com/Miiduoa/relaylab) · 訊息投遞模擬器
 
@@ -34,7 +34,7 @@
 
 **TypeScript · Deterministic simulation · CLI**
 
-[操作模擬器](https://miiduoa.github.io/relaylab/) · [模型與假設](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md)
+[操作模擬器](https://miiduoa.github.io/relaylab/) · [工程案例](https://miiduoa.github.io/case-studies/relaylab/) · [模型與假設](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md)
 
 ### 04 — [Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss) · 零售決策支援原型
 
