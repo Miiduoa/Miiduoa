@@ -57,6 +57,7 @@
 
 ## 其他值得打開的工具
 
+- **稽核與復原**：[Proofline](https://miiduoa.github.io/labs/proofline/)（事件雜湊鏈與外部檢查點）、[Recovergrid](https://miiduoa.github.io/labs/recovergrid/)（備份可用性與 RPO / RTO 邊界）
 - **網路與資料庫**：[Tracefold](https://github.com/Miiduoa/tracefold)（HAR 分析）、[Patchday](https://github.com/Miiduoa/patchday)（SQLite migration 預演）
 - **互動與媒體**：[Motionbench](https://github.com/Miiduoa/motionbench)（動畫曲線）、[Switchback](https://github.com/Miiduoa/switchback)（GPX 路線）、[Roomtone](https://github.com/Miiduoa/roomtone)（音訊剪輯）
 - **分析與實驗**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與可重現程式）、[Carry](https://miiduoa.github.io/tools/carry/) / [Capacity](https://miiduoa.github.io/tools/capacity/)（現金流與排隊量能模型）
