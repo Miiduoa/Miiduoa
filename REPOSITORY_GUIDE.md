@@ -1,91 +1,42 @@
-# Repository Guide
+# 專案導覽
 
-這份索引是給第一次瀏覽 Miiduoa 帳號的人。GitHub 上保留了一些早期課堂、原型與重做前的 repository；如果要評估目前的能力，請優先看下面的 maintained work，而不是只依 repo 名稱或建立時間判斷。
+這份清單按「審查時能回答什麼問題」排序，不按建立日期、commit 數量或程式碼行數。想快速了解目前的實作能力，從前五個作品開始；課堂作業、早期原型和單點實驗不應跟它們放在同一層比較。
 
-## Start here
+## 先看五個有完整脈絡的作品
 
-### 1. Flagship system
+| 想評估的能力 | 專案 | 從哪裡開始 |
+| --- | --- | --- |
+| 跨端架構、角色流程與測試 | **[Campus One](https://github.com/Miiduoa/graduation)** | [案例介紹](https://miiduoa.github.io/case-studies/campus-one/) → [兩分鐘審查](https://github.com/Miiduoa/graduation/blob/main/docs/REVIEW_IN_2_MINUTES.md) → [測試紀錄](https://github.com/Miiduoa/graduation/blob/main/docs/TESTING_EVIDENCE.md) |
+| API 版本相容性與不完整資訊的處理 | **[Contractscope](https://github.com/Miiduoa/contractscope)** | [線上操作](https://miiduoa.github.io/contractscope/) → [規則定義](https://github.com/Miiduoa/contractscope/blob/main/docs/rules.md) |
+| 重試、租約、冪等與可重現模擬 | **[Relaylab](https://github.com/Miiduoa/relaylab)** | [線上操作](https://miiduoa.github.io/relaylab/) → [模型假設](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md) |
+| 從預測到可授權、可稽核的決策流程 | **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | [操作流程與截圖](https://github.com/Miiduoa/retail-ops-dss#30-秒-demo-路徑) → [權限程式](https://github.com/Miiduoa/retail-ops-dss/blob/main/src/access/policy.py) |
+| 檔案處理、可檢查輸出與邊界測試 | **[Foldpress](https://github.com/Miiduoa/foldpress)** | [線上操作](https://miiduoa.github.io/foldpress/) → [拼版與列印限制](https://github.com/Miiduoa/foldpress/blob/main/docs/decisions.md) |
 
-**[Campus One](https://github.com/Miiduoa/graduation)**  
-Mobile + Web + Backend 的校園產品 monorepo。  
-重點：Expo、Next.js、Firebase、shared contracts、角色權限、rules tests、CI / E2E、degraded path。
+Campus One 是整合型系統；其餘四個作品各自處理一個能被測試的問題。讀 README 時可以特別注意範例輸入、失敗案例、測試與明確寫出的限制。
 
-- [Case study](https://miiduoa.github.io/case-studies/campus-one/)
-- [2-minute reviewer path](https://github.com/Miiduoa/graduation/blob/main/docs/REVIEW_IN_2_MINUTES.md)
+## 依主題延伸
 
-## Tools
+**產品與瀏覽器工具**：[Motionbench](https://github.com/Miiduoa/motionbench)（動畫模型與匯出）、[Switchback](https://github.com/Miiduoa/switchback)（GPX 路線分析）、[Roomtone](https://github.com/Miiduoa/roomtone)（WAV 音訊剪輯）、[Tracefold](https://github.com/Miiduoa/tracefold)（HAR 效能記錄）、[Stillroom](https://github.com/Miiduoa/stillroom)（圖片交付）、[Cuework](https://github.com/Miiduoa/cuework)（字幕時間軸）。
 
-這些專案有明確使用情境、可操作介面與可檢查限制：
+**資料工程與決策**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與程式）、[mymis](https://github.com/Miiduoa/mymis)（產品分析）、[byline](https://github.com/Miiduoa/byline)（CSV 契約）、[bitest](https://github.com/Miiduoa/bitest)（BI 驗證）、[stock](https://github.com/Miiduoa/stock)（回測）、[Capacity / Carry](https://miiduoa.github.io/)（排隊與現金流模型）。
 
-| Repo | Focus |
-|---|---|
-| [Foldpress](https://github.com/Miiduoa/foldpress) | PDF 小冊子拼版，確認頁序後匯出列印檔；[設計與限制](https://github.com/Miiduoa/foldpress/blob/main/docs/decisions.md) |
-| [Relaylab](https://github.com/Miiduoa/relaylab) | 佇列投遞、租約競爭與種子重播；[模型與邊界](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md) |
-| [Contractscope](https://github.com/Miiduoa/contractscope) | OpenAPI 合約比較、變更風險與 CLI；[設計與規則範圍](https://github.com/Miiduoa/contractscope/blob/main/docs/design.zh-TW.md) |
-| [Motionbench](https://github.com/Miiduoa/motionbench) | 彈簧與 Bézier 動畫工作台；[模型與驗證](https://github.com/Miiduoa/motionbench/blob/main/docs/design.zh-TW.md) |
-| [Switchback](https://github.com/Miiduoa/switchback) | 本機 GPX 路線與海拔分析，支援繁中／英文 |
-| [Roomtone](https://github.com/Miiduoa/roomtone) | 本機音訊剪輯、淡入淡出與 WAV 匯出，支援繁中／英文 |
-| [Stillroom](https://github.com/Miiduoa/stillroom) | browser image delivery workbench |
-| [Cuework](https://github.com/Miiduoa/cuework) | subtitle timing / overlap editor |
-| [Tracefold](https://github.com/Miiduoa/tracefold) | HAR / network trace analysis |
-| [Patchday](https://github.com/Miiduoa/patchday) | SQLite migration rehearsal |
-| [nowrite](https://github.com/Miiduoa/nowrite) | handwriting/PDF workflow |
-| [web](https://github.com/Miiduoa/web) | resilient student planner PWA |
+**服務與可靠性**：[Patchday](https://github.com/Miiduoa/patchday)（SQLite migration 預演）、[line-bot](https://github.com/Miiduoa/line-bot)（Webhook inbox / outbox）、[web](https://github.com/Miiduoa/web)（學生規劃 PWA）、[nowrite](https://github.com/Miiduoa/nowrite)（文字轉手寫圖與 PDF）。
 
-## Data / analytics / decision systems
+## 工程實驗
 
-| Repo | Focus |
-|---|---|
-| [Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss) | forecasting → replenishment / staffing decisions |
-| [Demand Sensing Lite](https://github.com/Miiduoa/demand-sensing-lite) | demand-sensing baseline |
-| [Rail Ops Briefing DSS](https://github.com/Miiduoa/rail-ops-briefing-dss) | operational briefing / decision support |
-| [Competition Lab](https://github.com/Miiduoa/competition-lab) | reproducible competition workflow |
-| [mymis](https://github.com/Miiduoa/mymis) | product analytics / experimentation |
-| [bitest](https://github.com/Miiduoa/bitest) | BI regression / data-quality gate |
-| [byline](https://github.com/Miiduoa/byline) | dataset contract |
-| [0925SQL](https://github.com/Miiduoa/0925SQL) | SQLite analytics mart |
-| [stock](https://github.com/Miiduoa/stock) | walk-forward backtest discipline |
+[作品集網站的 Labs 區](https://miiduoa.github.io/) 收錄 Tracepath（追蹤）、Flagrail（功能旗標）、LineageGuard（結構沿革）、TxnScope（樂觀鎖）、SessionSentry（工作階段）、Eventlane（事件投遞）、Syncbench（離線同步）與 Rampwatch（漸進發布）。
 
-## Engineering studies
+這些是刻意縮小範圍的模型或互動示範，**不是完整 SaaS 產品**。另外還有 [ERP](https://github.com/Miiduoa/ERP)、[learnpy](https://github.com/Miiduoa/learnpy)、[Game2D.2](https://github.com/Miiduoa/Game2D.2) 等題目，保留作為技術練習紀錄。
 
-這些 repo / labs 刻意把一個技術問題縮小，讓規則與失敗情境可以直接測：
+## 歷史版本與目前不主推的儲存庫
 
-- [Tracepath](https://miiduoa.github.io/labs/tracepath/) — distributed trace structure / exclusive time
-- [Flagrail](https://miiduoa.github.io/labs/flagrail/) — deterministic feature flags
-- [LineageGuard](https://miiduoa.github.io/labs/lineageguard/) — schema evolution / column lineage
-- [TxnScope](https://miiduoa.github.io/labs/txnscope/) — optimistic concurrency
-- [SessionSentry](https://miiduoa.github.io/labs/sessionsentry/) — session lifecycle
-- [Eventlane](https://miiduoa.github.io/labs/eventlane/) — at-least-once delivery / DLQ
-- [Syncbench](https://miiduoa.github.io/labs/syncbench/) — offline synchronization
-- [Rampwatch](https://miiduoa.github.io/labs/rampwatch/) — canary guardrails
-- [Gesture](https://github.com/Miiduoa/Gesture) — accelerometer feature pipeline
-- [Game2D.2](https://github.com/Miiduoa/Game2D.2) — deterministic fixed-step simulation
-- [ERP](https://github.com/Miiduoa/ERP) — append-only inventory ledger
-- [learnpy](https://github.com/Miiduoa/learnpy) — AST-based structural code checks
-- [anyone](https://github.com/Miiduoa/anyone) — moderation / idempotency / audit boundaries
-- [aortal](https://github.com/Miiduoa/aortal) — JSON contract regression guard
-- [llm](https://github.com/Miiduoa/llm) — LoRA training pipeline validation
+- [campus-one-v2](https://github.com/Miiduoa/campus-one-v2) 和 [campus-one-v12-prototypes](https://github.com/Miiduoa/campus-one-v12-prototypes) 屬於 Campus One 之前的探索與原型。
+- [nuni-prod](https://github.com/Miiduoa/nuni-prod) 已封存。
+- 名稱為 [「-」](https://github.com/Miiduoa/-) 的 repository 是早期帳號紀錄，不列為作品。
+- 其餘課堂練習、實驗分支與尚未整合的專案仍可在 [Repositories](https://github.com/Miiduoa?tab=repositories) 查到，但不代表目前主力作品的完成度。
 
-## Superseded / historical repositories
+## 檢查一個專案的方式
 
-下面這些不是目前作品集主線；保留主要是歷史與遷移參考：
+先確認輸入與預期輸出，再自己重現其中一個錯誤情境。接著看核心邏輯是否獨立於 UI、測試是否真的覆蓋邊界，以及文件有沒有區分原型、合成資料、已驗證結果和待完成工作。作品的價值不在 commit 次數，而在能不能被別人讀懂、執行和質疑。
 
-| Repo | Status |
-|---|---|
-| [campus-one-v2](https://github.com/Miiduoa/campus-one-v2) | superseded by Campus One |
-| [campus-one-v12-prototypes](https://github.com/Miiduoa/campus-one-v12-prototypes) | superseded design prototypes |
-| [nuni-prod](https://github.com/Miiduoa/nuni-prod) | archived |
-| [-](https://github.com/Miiduoa/-) | legacy account-history marker |
-
-它們不應被拿來代表目前的程式品質；對應 README 也會指向 maintained successor。
-
-## Review principle
-
-我希望 repository 本身能回答四個問題：
-
-1. 這個專案真正解什麼問題？
-2. 哪些規則可以被測試或重現？
-3. 失敗、權限與資料邊界怎麼處理？
-4. 哪些事情沒有被假裝成已完成？
-
-快速審查可以先看 Campus One 的跨端整合，再依主題選擇：Foldpress 的 PDF 頁序與輸出、Relaylab 的重試與去重模型、Contractscope 的介面變更規則，或 Retail Ops DSS 的決策分析。每個專案都可以從範例、核心實作與測試交叉檢查。
+[回到 GitHub 首頁](README.md) · [開啟完整網站](https://miiduoa.github.io/)
