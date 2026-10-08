@@ -59,7 +59,7 @@
 
 - **網路與資料庫**：[Tracefold](https://github.com/Miiduoa/tracefold)（HAR 分析）、[Patchday](https://github.com/Miiduoa/patchday)（SQLite migration 預演）
 - **互動與媒體**：[Motionbench](https://github.com/Miiduoa/motionbench)（動畫曲線）、[Switchback](https://github.com/Miiduoa/switchback)（GPX 路線）、[Roomtone](https://github.com/Miiduoa/roomtone)（音訊剪輯）
-- **分析與實驗**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與可重現程式）、[Carry / Capacity](https://miiduoa.github.io/)（現金流與排隊量能模型）
+- **分析與實驗**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與可重現程式）、[Carry](https://miiduoa.github.io/tools/carry/) / [Capacity](https://miiduoa.github.io/tools/capacity/)（現金流與排隊量能模型）
 
 如果要深入看程式，不妨先跑專案提供的範例與測試，再對照 README 寫出的支援範圍和已知限制。競賽的本地驗證與官方成績、原型資料與真實資料，會分開標示。
 

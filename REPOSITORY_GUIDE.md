@@ -18,13 +18,13 @@ Campus One 是整合型系統；其餘四個作品各自處理一個能被測試
 
 **產品與瀏覽器工具**：[Motionbench](https://github.com/Miiduoa/motionbench)（動畫模型與匯出）、[Switchback](https://github.com/Miiduoa/switchback)（GPX 路線分析）、[Roomtone](https://github.com/Miiduoa/roomtone)（WAV 音訊剪輯）、[Tracefold](https://github.com/Miiduoa/tracefold)（HAR 效能記錄）、[Stillroom](https://github.com/Miiduoa/stillroom)（圖片交付）、[Cuework](https://github.com/Miiduoa/cuework)（字幕時間軸）。
 
-**資料工程與決策**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與程式）、[mymis](https://github.com/Miiduoa/mymis)（產品分析）、[byline](https://github.com/Miiduoa/byline)（CSV 契約）、[bitest](https://github.com/Miiduoa/bitest)（BI 驗證）、[stock](https://github.com/Miiduoa/stock)（回測）、[Capacity / Carry](https://miiduoa.github.io/)（排隊與現金流模型）。
+**資料工程與決策**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與程式）、[mymis](https://github.com/Miiduoa/mymis)（產品分析）、[byline](https://github.com/Miiduoa/byline)（CSV 契約）、[bitest](https://github.com/Miiduoa/bitest)（BI 驗證）、[stock](https://github.com/Miiduoa/stock)（回測）、[Capacity](https://miiduoa.github.io/tools/capacity/) / [Carry](https://miiduoa.github.io/tools/carry/)（排隊與現金流模型）。
 
 **服務與可靠性**：[Patchday](https://github.com/Miiduoa/patchday)（SQLite migration 預演）、[line-bot](https://github.com/Miiduoa/line-bot)（Webhook inbox / outbox）、[web](https://github.com/Miiduoa/web)（學生規劃 PWA）、[nowrite](https://github.com/Miiduoa/nowrite)（文字轉手寫圖與 PDF）。
 
 ## 工程實驗
 
-[作品集網站的 Labs 區](https://miiduoa.github.io/) 收錄 Tracepath（追蹤）、Flagrail（功能旗標）、LineageGuard（結構沿革）、TxnScope（樂觀鎖）、SessionSentry（工作階段）、Eventlane（事件投遞）、Syncbench（離線同步）與 Rampwatch（漸進發布）。
+作品集網站的 Labs 區收錄 [Tracepath](https://miiduoa.github.io/labs/tracepath/)（追蹤）、[Flagrail](https://miiduoa.github.io/labs/flagrail/)（功能旗標）、[LineageGuard](https://miiduoa.github.io/labs/lineageguard/)（結構沿革）、[TxnScope](https://miiduoa.github.io/labs/txnscope/)（樂觀鎖）、[SessionSentry](https://miiduoa.github.io/labs/sessionsentry/)（工作階段）、[Eventlane](https://miiduoa.github.io/labs/eventlane/)（事件投遞）、[Syncbench](https://miiduoa.github.io/labs/syncbench/)（離線同步）與 [Rampwatch](https://miiduoa.github.io/labs/rampwatch/)（漸進發布）。
 
 這些是刻意縮小範圍的模型或互動示範，**不是完整 SaaS 產品**。另外還有 [ERP](https://github.com/Miiduoa/ERP)、[learnpy](https://github.com/Miiduoa/learnpy)、[Game2D.2](https://github.com/Miiduoa/Game2D.2) 等題目，保留作為技術練習紀錄。
 
