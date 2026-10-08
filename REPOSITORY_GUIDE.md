@@ -26,6 +26,8 @@ Campus One 是整合型系統；其餘四個作品各自處理一個能被測試
 
 作品集網站的 Labs 區收錄 [Tracepath](https://miiduoa.github.io/labs/tracepath/)（追蹤）、[Flagrail](https://miiduoa.github.io/labs/flagrail/)（功能旗標）、[LineageGuard](https://miiduoa.github.io/labs/lineageguard/)（結構沿革）、[TxnScope](https://miiduoa.github.io/labs/txnscope/)（樂觀鎖）、[SessionSentry](https://miiduoa.github.io/labs/sessionsentry/)（工作階段）、[Eventlane](https://miiduoa.github.io/labs/eventlane/)（事件投遞）、[Syncbench](https://miiduoa.github.io/labs/syncbench/)（離線同步）與 [Rampwatch](https://miiduoa.github.io/labs/rampwatch/)（漸進發布）與 [Recovergrid](https://miiduoa.github.io/labs/recovergrid/)（災難復原情境）。
 
+新增 [Proofline](https://miiduoa.github.io/labs/proofline/)（雜湊鏈完整性與獨立錨定）及 [Recovergrid](https://miiduoa.github.io/labs/recovergrid/)（備份可用性、RPO/RTO 決策）；核心與測試均收在作品集網站的 labs 目錄。
+
 這些是刻意縮小範圍的模型或互動示範，**不是完整 SaaS 產品**。另外還有 [ERP](https://github.com/Miiduoa/ERP)、[learnpy](https://github.com/Miiduoa/learnpy)、[Game2D.2](https://github.com/Miiduoa/Game2D.2) 等題目，保留作為技術練習紀錄。
 
 ## 歷史版本與展示範圍
