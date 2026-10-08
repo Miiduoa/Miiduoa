@@ -6,6 +6,10 @@
 
 **[個人作品集](https://miiduoa.github.io/)** · [Campus One 案例](https://miiduoa.github.io/case-studies/campus-one/) · [完整專案索引](REPOSITORY_GUIDE.md) · [Kaggle](https://www.kaggle.com/kuchinwei) · [聯絡我](mailto:demohan513@gmail.com)
 
+[![作品集驗證](https://github.com/Miiduoa/Miiduoa.github.io/actions/workflows/lab-tests.yml/badge.svg)](https://github.com/Miiduoa/Miiduoa.github.io/actions/workflows/lab-tests.yml) [![Campus One CI](https://github.com/Miiduoa/graduation/actions/workflows/ci.yml/badge.svg)](https://github.com/Miiduoa/graduation/actions/workflows/ci.yml)
+
+> 專案狀態以各 repository 的 Actions 與測試紀錄為準；部分展示使用合成資料或示範環境。
+
 ## 從這幾個專案開始
 
 ### 01 — [Campus One](https://github.com/Miiduoa/graduation) · 校園跨端系統
