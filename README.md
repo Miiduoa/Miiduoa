@@ -1,59 +1,62 @@
-# 顧晉瑋 · Miiduoa
+# 顧晉瑋 / Miiduoa
 
-靜宜大學資訊管理學系。跨端產品、資料分析與可靠性工程。
+靜宜大學資訊管理學系｜跨端應用、資料分析、系統可靠性
 
-[作品集](https://miiduoa.github.io) · [Campus One 案例介紹](https://miiduoa.github.io/case-studies/campus-one/) · [專案導覽](REPOSITORY_GUIDE.md) · [Kaggle](https://www.kaggle.com/kuchinwei) · [Email](mailto:demohan513@gmail.com)
+我喜歡從一個明確的使用情境開始做軟體：畫面要能操作，核心規則要能測，遇到錯誤時也要知道系統會怎麼處理。這裡放的是目前還在維護、能看到實作與設計取捨的作品。
 
-從 **Campus One** 的案例介紹開始，或直接開啟下面的工具。各專案附有執行方式、測試與設計限制。
+**[個人作品集](https://miiduoa.github.io/)** · [Campus One 案例](https://miiduoa.github.io/case-studies/campus-one/) · [完整專案索引](REPOSITORY_GUIDE.md) · [Kaggle](https://www.kaggle.com/kuchinwei) · [聯絡我](mailto:demohan513@gmail.com)
 
-## 精選作品
+## 從這幾個專案開始
 
-<a href="https://miiduoa.github.io/foldpress/"><img src="https://raw.githubusercontent.com/Miiduoa/foldpress/main/docs/screenshot.png" width="49%" alt="Foldpress 的 PDF 頁序、紙張與拼版預覽" /></a>
-<a href="https://miiduoa.github.io/relaylab/"><img src="https://raw.githubusercontent.com/Miiduoa/relaylab/main/docs/screenshot.png" width="49%" alt="Relaylab 的 worker 投遞時間軸、訊息狀態與事件紀錄" /></a>
+### 01 — [Campus One](https://github.com/Miiduoa/graduation) · 校園跨端系統
 
-| 作品 | 用途 | 技術重點 |
-| --- | --- | --- |
-| **[Campus One](https://github.com/Miiduoa/graduation)** · [案例介紹](https://miiduoa.github.io/case-studies/campus-one/) | **旗艦專案**：把課程、訊息、地圖、交通與角色資料流接成同一套跨端校園產品 | Expo · Next.js · Firebase · shared contracts · rules tests · CI / E2E |
-| **[Foldpress](https://github.com/Miiduoa/foldpress)** · [開啟工具](https://miiduoa.github.io/foldpress/) | 把 PDF 排成可對折裝訂的小冊子，先確認頁序，再匯出列印檔 | TypeScript · PDF 拼版 · 檔案在瀏覽器處理 |
-| **[Relaylab](https://github.com/Miiduoa/relaylab)** · [開啟模擬器](https://miiduoa.github.io/relaylab/) | 沿著投遞時間軸查看重試與租約過期，比較冪等寫入前後的結果 | TypeScript · 離散事件模擬 · 種子重播 · CLI |
-| **[Contractscope](https://github.com/Miiduoa/contractscope)** · [開啟工具](https://miiduoa.github.io/contractscope/) | 比較兩版 OpenAPI 合約，檢查呼叫端可能受到的影響 | TypeScript · 相容性規則 · CLI · [設計說明](https://github.com/Miiduoa/contractscope/blob/main/docs/design.zh-TW.md) |
-| **[Motionbench](https://github.com/Miiduoa/motionbench)** · [開啟工具](https://miiduoa.github.io/motionbench/) | 調整彈簧與 Bézier 動畫，查看曲線並匯出程式碼 | TypeScript · 數值模型 · CSS easing · [設計說明](https://github.com/Miiduoa/motionbench/blob/main/docs/design.zh-TW.md) |
-| **[Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss)** | 銷量預測接到補貨與人力規劃 | Python · 時間切分 · Baseline 比較 |
-| **[Carry](https://miiduoa.github.io/tools/carry/)** · [計算模型](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/tools/carry) | 貸款與現金購買的期末淨資產比較；納入剩餘債務與四種投資情境 | JavaScript · 現金流模型 · 數學測試 |
-| **[Capacity](https://miiduoa.github.io/tools/capacity/)** · [計算模型](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/tools/capacity) | 服務席次的排隊機率、尖峰負載及目標等待時間比較 | Erlang C · 排隊理論 · SVG · 測試 |
+課表、訊息、地圖和校園服務不應該是彼此孤立的入口。Campus One 把 Mobile、Web 與後端接成同一套資料流程，處理共用型別、角色權限、安全導頁與服務不可用時的替代路徑。
 
-## 更多工具
+**Expo / React Native · Next.js · Firebase · TypeScript**
 
-- **[Switchback](https://github.com/Miiduoa/switchback)** · [開啟工具](https://miiduoa.github.io/switchback/) — 讀取 GPX 路線，在路線圖與海拔剖面間查看分段紀錄。
-- **[Roomtone](https://github.com/Miiduoa/roomtone)** · [開啟工具](https://miiduoa.github.io/roomtone/) — 剪取音訊、調整淡入淡出與音量，匯出 WAV。
-- **[Stillroom](https://github.com/Miiduoa/stillroom)** · [開啟工具](https://miiduoa.github.io/stillroom/) — 整理圖片尺寸、格式與交付檔案。
-- **[Cuework](https://github.com/Miiduoa/cuework)** · [開啟工具](https://miiduoa.github.io/cuework/) — 編修 SRT / VTT 字幕、校正時間並檢查重疊。
-- **[Tracefold](https://github.com/Miiduoa/tracefold)** · [開啟工具](https://miiduoa.github.io/tracefold/) — 從 HAR 找出慢請求、傳輸量與網路錯誤。
-- **[Patchday](https://github.com/Miiduoa/patchday)** · [範例報告](https://miiduoa.github.io/patchday/) — 在獨立快照預演 SQLite migration，檢查結構差異與資料損失。
+[查看實際畫面與案例](https://miiduoa.github.io/case-studies/campus-one/) · [兩分鐘程式審查路徑](https://github.com/Miiduoa/graduation/blob/main/docs/REVIEW_IN_2_MINUTES.md) · [測試紀錄](https://github.com/Miiduoa/graduation/blob/main/docs/TESTING_EVIDENCE.md)
 
-Switchback、Roomtone 與 Stillroom 在瀏覽器處理匯入檔案。Cuework 的線上版本使用瀏覽器儲存；SQLite 版本服務可依 repo 說明在本機啟動。
+### 02 — [Contractscope](https://github.com/Miiduoa/contractscope) · API 合約比較
 
-## 其他作品
+比較兩個 OpenAPI 版本時，新增欄位不一定就是安全變更，請求與回應的相容方向也不同。這個工具會標出變更、對應規則與可能受影響的操作；規則沒涵蓋的部分不會被誤報成「沒有問題」。
 
-- [nowrite](https://github.com/Miiduoa/nowrite) — 文字轉手寫圖片與 PDF，Vue / FastAPI / Electron。
-- [Reliable LINE Webhook](https://github.com/Miiduoa/line-bot) — SQLite inbox / outbox、去重與失敗重試。
-- [Byline](https://github.com/Miiduoa/byline) — 可放進版本控制的 CSV dataset contract。
-- [Product Analytics Lab](https://github.com/Miiduoa/mymis) — A/B test、資料品質與 cohort 分析。
+**TypeScript · OpenAPI · Browser + CLI**
 
-執行方式、測試與已知限制放在各專案的 README。
+[操作工具](https://miiduoa.github.io/contractscope/) · [規則與限制](https://github.com/Miiduoa/contractscope/blob/main/docs/rules.md)
 
-<details>
-<summary>工程實驗</summary>
+### 03 — [Relaylab](https://github.com/Miiduoa/relaylab) · 訊息投遞模擬器
 
-- [Tracepath](https://miiduoa.github.io/labs/tracepath/) — Distributed tracing
-- [Flagrail](https://miiduoa.github.io/labs/flagrail/) — Feature flags
-- [LineageGuard](https://miiduoa.github.io/labs/lineageguard/) — Schema evolution
-- [TxnScope](https://miiduoa.github.io/labs/txnscope/) — Optimistic concurrency
-- [SessionSentry](https://miiduoa.github.io/labs/sessionsentry/) — Session lifecycle
-- [Eventlane](https://miiduoa.github.io/labs/eventlane/) — Event delivery
-- [Syncbench](https://miiduoa.github.io/labs/syncbench/) — Offline synchronization
-- [Rampwatch](https://miiduoa.github.io/labs/rampwatch/) — Release guardrails
+讓 ACK 遺失、租約過期和重試在時間軸上看得見。相同亂數種子可以重播執行過程，對照冪等寫入如何避免重複副作用；瀏覽器介面與 CLI 共用一套離散事件核心。
 
-[實驗原始碼](https://github.com/Miiduoa/Miiduoa.github.io/tree/main/labs)
+**TypeScript · Deterministic simulation · CLI**
 
-</details>
+[操作模擬器](https://miiduoa.github.io/relaylab/) · [模型與假設](https://github.com/Miiduoa/relaylab/blob/main/docs/model.md)
+
+### 04 — [Retail Ops DSS](https://github.com/Miiduoa/retail-ops-dss) · 零售決策支援原型
+
+從銷量預測延伸到補貨和人力建議，另外實作門市範圍、角色授權、敏感操作再驗證與稽核。資料是**固定種子的合成資料**，適合展示模型與操作流程，不冒充真實營運成效。
+
+**Python · Streamlit · scikit-learn · SQLite**
+
+[執行與驗證](https://github.com/Miiduoa/retail-ops-dss#如何執行) · [介面截圖](https://github.com/Miiduoa/retail-ops-dss/tree/main/docs/screenshots)
+
+### 05 — [Foldpress](https://github.com/Miiduoa/foldpress) · PDF 小冊拼版
+
+把普通 PDF 重新安排成可對折裝訂的小冊子。先在瀏覽器核對紙張正反面與頁序，再產生列印檔；測試會重新讀回輸出 PDF，檢查頁面尺寸、排列與旋轉。
+
+**TypeScript · PDF processing · Browser-only**
+
+[操作工具](https://miiduoa.github.io/foldpress/) · [設計取捨](https://github.com/Miiduoa/foldpress/blob/main/docs/decisions.md)
+
+<a href="https://miiduoa.github.io/relaylab/"><img src="https://raw.githubusercontent.com/Miiduoa/relaylab/main/docs/screenshot.png" width="49%" alt="Relaylab 的投遞時間軸及 worker 狀態" /></a>
+<a href="https://miiduoa.github.io/foldpress/"><img src="https://raw.githubusercontent.com/Miiduoa/foldpress/main/docs/screenshot.png" width="49%" alt="Foldpress 的紙張與頁序工作台" /></a>
+
+## 其他值得打開的工具
+
+- **網路與資料庫**：[Tracefold](https://github.com/Miiduoa/tracefold)（HAR 分析）、[Patchday](https://github.com/Miiduoa/patchday)（SQLite migration 預演）
+- **互動與媒體**：[Motionbench](https://github.com/Miiduoa/motionbench)（動畫曲線）、[Switchback](https://github.com/Miiduoa/switchback)（GPX 路線）、[Roomtone](https://github.com/Miiduoa/roomtone)（音訊剪輯）
+- **分析與實驗**：[Competition Lab](https://github.com/Miiduoa/competition-lab)（競賽紀錄與可重現程式）、[Carry / Capacity](https://miiduoa.github.io/)（現金流與排隊量能模型）
+
+如果要深入看程式，不妨先跑專案提供的範例與測試，再對照 README 寫出的支援範圍和已知限制。競賽的本地驗證與官方成績、原型資料與真實資料，會分開標示。
+
+[更多專案、工程實驗與歷史版本 →](REPOSITORY_GUIDE.md)
