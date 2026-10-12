@@ -4,7 +4,7 @@
 
 目前主要維護 **Campus One**。我關注的不只是畫面能不能操作，還包括不同角色能存取哪些資料，以及登入、連線或寫入失敗後，使用者能否繼續完成事情。
 
-[作品集](https://miiduoa.github.io/) · [專案索引](REPOSITORY_GUIDE.md) · [Email](mailto:demohan513@gmail.com) · [Kaggle](https://www.kaggle.com/kuchinwei)
+[作品集](https://miiduoa.github.io/) · [專案索引](REPOSITORY_GUIDE.md) · [Email](mailto:demohan513@gmail.com)
 
 ## Campus One
 

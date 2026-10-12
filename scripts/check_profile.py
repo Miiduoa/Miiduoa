@@ -102,7 +102,7 @@ def online_status(url: str) -> tuple[str, str | None]:
                             return url, None
                         return url, f"HTTP {response.status}"
                 except HTTPError as error:
-                    if method == "HEAD" and error.code in (403, 405, 501):
+                    if method == "HEAD" and error.code in (403, 404, 405, 410, 501):
                         continue
                     raise
         except (HTTPError, URLError, TimeoutError, OSError) as error:

@@ -83,15 +83,18 @@ class ProfileChecks(unittest.TestCase):
         open_url.side_effect = HTTPError("https://github.com/missing", 404, "not found", {}, None)
         _, error = online_status("https://github.com/missing")
         self.assertIn("404", error)
-        self.assertEqual(open_url.call_count, 3)
+        self.assertEqual(open_url.call_count, 6)
 
     @patch("check_profile.urlopen")
     def test_head_rejection_falls_back_to_get(self, open_url):
-        good = unittest.mock.MagicMock()
-        good.__enter__.return_value.status = 200
-        open_url.side_effect = [HTTPError("https://github.com/", 405, "method", {}, None), good]
-        self.assertEqual(online_status("https://github.com/")[1], None)
-        self.assertEqual(open_url.call_args_list[1].args[0].method, "GET")
+        for status in (403, 404, 405, 410, 501):
+            with self.subTest(status=status):
+                open_url.reset_mock()
+                good = unittest.mock.MagicMock()
+                good.__enter__.return_value.status = 200
+                open_url.side_effect = [HTTPError("https://github.com/", status, "method", {}, None), good]
+                self.assertEqual(online_status("https://github.com/")[1], None)
+                self.assertEqual(open_url.call_args_list[1].args[0].method, "GET")
 
 
 if __name__ == "__main__":
