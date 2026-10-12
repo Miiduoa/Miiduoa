@@ -1,0 +1,32 @@
+name: Profile checks
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.md', 'scripts/**', '.github/workflows/profile.yml']
+  pull_request:
+    paths: ['*.md', 'scripts/**', '.github/workflows/profile.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Test the checker
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Check document structure and local links
+        run: python3 scripts/check_profile.py
+      - name: Check public destinations
+        if: github.event_name != 'pull_request'
+        run: python3 scripts/check_profile.py --online
